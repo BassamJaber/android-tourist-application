@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/destInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:text="Destination Profile"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/destName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/destInfo"
+        android:text="Name  "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/destCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/destName"
+        android:layout_marginTop="20dp"
+        android:text="Country "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/destLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/destCountry"
+        android:layout_marginTop="20dp"
+        android:text="Longitude"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/destLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/destLong"
+        android:layout_marginTop="20dp"
+        android:text="Latitude"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textSize="20dp"
+
+        android:layout_marginTop="38dp"
+        android:text="Destination Name"
+        android:layout_toRightOf="@+id/destName" />
+
+    <TextView
+        android:id="@+id/countryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:text="Country Name"
+        android:textSize="20dp"
+
+        android:layout_toRightOf="@+id/destCountry"
+        android:layout_below="@+id/nameText"/>
+
+    <TextView
+        android:id="@+id/LongText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="3dp"
+        android:text="0"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:maxWidth="170dp"
+        android:layout_alignTop="@+id/destLong"
+        android:layout_toRightOf="@+id/destLong"
+        android:layout_toEndOf="@+id/destLong" />
+
+    <TextView
+        android:id="@+id/LatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@+id/destLat"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="20dp"
+        android:maxWidth="170dp"
+        android:inputType="number"
+        android:layout_below="@+id/destLong"/>
+
+
+
+    <ImageView android:id="@+id/image_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="300dp"
+        android:maxWidth="600dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_no_photo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/destPhoto"
+        android:layout_alignRight="@+id/destPhotoPath"
+        android:layout_alignEnd="@+id/destPhotoPath"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>
