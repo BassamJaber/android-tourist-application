@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.birzeit.lab.advanced.touristapp" >
+    <uses-feature android:name="android.hardware.camera"></uses-feature>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="com.example.googlemaps.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/plane_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Splash screen -->
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--<activity-->
+            <!--android:name=".MainActivity"-->
+            <!--android:label="@string/app_name" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <activity android:name="advanced.project.controllers.CustomerActivity"></activity>”
+        <activity android:name=".MainActivity"></activity>”
+        <activity android:name="advanced.project.controllers.DestinationActivity"></activity>”
+        <activity android:name="advanced.project.controllers.FlightActivity"></activity>”
+        <activity android:name="advanced.project.controllers.AddDestinationActivity"></activity>”
+        <activity android:name="advanced.project.controllers.GoogleMapActivity"></activity>”
+        <activity android:name="advanced.project.controllers.GoogleCoordinatesActivity"></activity>”
+        <activity android:name="advanced.project.listview.CustomizedListView"></activity>”
+        <activity android:name="advanced.project.controllers.ViewDestinationProfile"></activity>”
+        <activity android:name="advanced.project.controllers.AddFlightActivity"></activity>”
+        <activity android:name="advanced.project.controllers.SelectDestinationActivity"></activity>”
+        <activity android:name="advanced.project.controllers.ViewFlightProfile"></activity>”
+        <activity android:name="advanced.project.controllers.ListDestinationFlightsActivity"></activity>”
+        <activity android:name="advanced.project.controllers.AddCustomerActivity"></activity>”
+        <activity android:name="advanced.project.controllers.ViewCustomerProfile"></activity>”
+        <activity android:name="advanced.project.controllers.BackupActivity"></activity>”
+        <activity android:name="advanced.project.controllers.DestinationSearchFilter"></activity>”
+        <activity android:name="advanced.project.controllers.FlightSearchFilter"></activity>”
+        <activity android:name="advanced.project.controllers.CustomerSearchFilter"></activity>”
+        <activity android:name=".AddNewStudentActivity"></activity>”
+        <activity android:name=".StudentsMainActivity"></activity>”
+
+
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDg0MK2BpMAvkNlIBJ8oinmvHeikjcS8yg" />
+    </application>
+
+</manifest>
